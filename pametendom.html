@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PametenDom</title>
+    </head>
+    <body>
+        <p>
+            <h1>Паметен дом навигациско мени</h1>
+            <ul>
+                <li> <a href=#dnevna>Дневна соба</a></li>
+                <li> <a href=#spalna>Спална соба</a></li>
+                <li> <a href=#kujna>Кујна</a></li>
+                <li> <a href=#gradina>Градина</a></li>
+                <li> <a href=#notifikacii>Нотификации</a></li>
+            </ul>
+        </p>
+        <p>
+        <section id="dnevna">
+            <h2>Дневна соба</h2>
+            <label>Температура(Дозволен опсег 20&lt температура &lt24)
+                10<input type ="range" min="10" max="40" value="28">40 <br>
+                <p>Батерија:48% Статус:вклучен</p>
+            </label>
+            <br>
+            <label>Движење
+                <select name="dvizenje">
+                     <option selected>нема движење</option>
+                    <option>има движење</option>
+                </select>
+                <p>Батерија:18% <mark>Статус:исклучен</mark></p>
+            <br>
+            </label>Статус на врата
+                <br>
+                <label>заклучена
+                <input type="radio" name="vrata" value="zaklucena">
+                        </label>
+            <label>отклучена
+                <input type="radio" name="vrata" value="otklucena" checked>
+            </label>
+            <p>Батерија:33% Статус:вклучен</p>        <br>
+        
+        </section>
+        </p>
+        <p>
+            <section id ="spalna">
+                <h2>Спална соба</h2>
+                <label>Квалитет на воздух C02 индекс(Дозволен опсег &lt1000):
+                    <input type = "number" value="1100" min="300" max="2000"> <br>
+                    <p>Батерија:80% Статус:вклучен</p>
+                    <br>
+                </label>
+                <label>Влажност на воздух
+                    40<input type="range" value="40" max="100">100 <br>
+                    <p>Батерија:55% Статус:вклучен</p>
+                    <br>
+                </label>
+                <label>Амбиентална ламба
+                    <input type="color" value="#C54B8C">
+                    <p><mark>Батерија:8%</mark> Статус:вклучен</p>
+                    <br>
+
+                </label>
+
+
+
+            </section>
+        </p>
+        <p>
+            <section id="kujna">
+                <h2>Кујна</h2>
+                Детектор на чад <br>
+                <label>Нормално
+                    <input type="radio" name="cad" value = "Normalno" checked>
+                </label>
+                <label>Детектирано чад
+                    <input type="radio" name="cad" value="Detektirano cad">
+                    <br>
+                    <p>Батерија:100% Статус:вклучен</p> <br>
+                </label>
+                <label>Сензор за истекување вода 
+                    <input type="checkbox"> <br>
+                    <p>Батерија:77% Статус:вклучен</p>
+                    <br>
+                </label>
+                <label>Тајмер за готвење
+                    <input type="time">
+                    <p><mark>Батерија:5%</mark> Статус:вклучен</p> <br>
+                </label>
+            </section>
+        </p>
+        <p>
+            <section id="gradina">
+                <h2>Градина</h2>
+                <label>Надворешна температура
+                    10<input type="range" min="10" max="45" value="18">45 <br>
+                    <p>Батерија:75% Статус:вклучен</p> <br>
+                </label>
+                <label>Интензитет на сонце
+                    <select>
+                        <option selected>Сончево</option>
+                        <option>Облачно</option>
+                        <option>Мрачно</option> <br>
+                        
+                    </select>
+                    <p>Батерија:20% Статус:вклучен</p> <br>
+                </label>
+                <label>Потрошувачка на вода(Дозволен опсег 100&lt потрошувачка &lt350)
+                    <input type = "number" value="400" min="0" max="500"> <br>
+                    <p>Батерија:90% Статус:вклучен</p> <br>
+                </label>
+            </section>
+        </p>
+        <p>
+            <section id="notifikacii">
+                <h2>Нотификации</h2>
+                <details>
+                    <summary>Надвор од опсег</summary>
+                    <p><strong>Предупредување</strong> висока температура во дневна(&gt24)</p>
+                    <p><strong>Предупредување</strong> вратата е отклучена</p>
+                    <p><strong>Предупредување</strong> низок квалитет на воздух(&gt1000)</strong></p>
+                    <p><strong>Предупредување</strong> голема потрошувачка на вода во градината(&gt350)</strong></p>
+                </details>
+                <details>
+                    <summary>Ниска батерија(&lt15%)</summary>
+                    <p><strong>Предупредување</strong> батеријата на амбиенталната ламба е ниска(8%)</p>
+                    <p><strong>Предупредување</strong> батеријата на тајмерот за готвење е ниска(5%)</p>
+                </details>
+                <details>
+                    <summary>Исклучен сензор</summary>
+                    <p><strong>Предупредување</strong> сензорот за движење не е вклучен</p>
+                </details>
+            </section>
+        </p>
+        <p>
+            <footer>изработено од <a href="https://github.com/NikolaTomov05">Никола Томов</a></footer>
+        </p>
+    </body>
+</html>
